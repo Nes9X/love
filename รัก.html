@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จดหมายรัก</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+            color: #fff;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0 0 20px;
+            color: #ff6f91;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 0 0 20px;
+            color: #ff6f91;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            line-height: 1.6;
+            color: #000000;
+        }
+
+        .heart {
+            font-size: 2rem;
+            color: #ff6f91;
+            animation: heartbeat 1s infinite;
+        }
+
+        iframe {
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .image-container img {
+            width: 80%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 20px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        iframe {
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> ❤️ เบบี๋ ❤️</h1>
+        <p>
+            สวัสดีสุดที่รักของเค้า,<br>
+            แค่ได้เห็นเบบี๋ยิ้มก็ทำให้ใจของเค้าก็มีความสุขขึ้นแล้ว 💖<br>
+            ขอบคุณที่เข้ามาในชีวิตเค้าและทำให้มันเต็มไปด้วยความสุข <br>
+            เค้ารักบี๋มากๆเลยนะ และจะรักบี๋คนเดียวตลอดไป 🌟
+        </p>
+        <div class="image-container">
+            <img src="IMG_4537.jpg" alt="Your Love" > <!-- ใส่ชื่อไฟล์รูปของคุณ -->
+        </div>
+        <p class="heart">รักบี๋ที่สุดในโลกเลยค้าบ 💖</p>
+        
+        <!-- เพลงที่เล่นอัตโนมัติจาก URL ของ YouTube -->
+        <iframe 
+            width="300" 
+            height="200" 
+            src="https://www.youtube.com/embed/EiafYKXJdWA?autoplay=1"  <!-- เปลี่ยนเป็น Video ID ของเพลงที่คุณชอบ -->
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    
+    <script>
+        // ฟังก์ชันเปิดเว็บโดยการสแกน QR Code
+        const qrCodeUrl = window.location.href;  // URL ของเว็บ
+        console.log(qrCodeUrl);
+    </script>
+</body>
+</html>
+
